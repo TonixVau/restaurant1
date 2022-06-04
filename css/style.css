@@ -1,0 +1,1000 @@
+/*============= Common CSS goes here ===========*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p {
+    line-height: 0.8;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Poppins', sans-serif;
+}
+p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+}
+body {
+    position: relative;
+    /* background-image: url("../images/1924548.jpg"); */
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+
+/*============= navbar CSS goes here ===========*/
+.back-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 999;
+    display: none;
+}
+.back-to-top i {
+    width: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #262626;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 27%;
+    transition: all linear .3s;
+}
+.back-to-top i:hover{
+    background-color:#FFC107;
+}
+.navbar {
+	padding-top:0;
+	padding-bottom:0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    transition: all linear .3s;
+    background-color: rgba(0, 0, 0, 0.788);
+}
+.bg{
+    background-color: rgba(0, 0, 0, 0.788);
+}
+.navbar-brand p{
+    color: #FFC107;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Sriracha', cursive;
+    padding-top: 15px;
+    
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #FFC107;
+    transition: all linear .3s;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 20px;
+    padding-left: 0;
+    padding: 17px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    line-height: 37px;
+}
+/*============= navbar CSS end here ===========*/
+/*============= banner CSS goes here ===========*/
+.banner-img {
+    position: absolute;
+    top: 86px;
+    left: 72%;
+    max-width: 190px;
+}
+.slider-item{
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+ 
+}
+.slider-item.slider-item::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+.banner-content {
+    height: 100vh;
+    position: relative !important;
+    z-index: 99999 !important;
+    padding-top: 200px;
+}
+.banner-content h4 {
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    color: #f7f6ea;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+.banner-content span {
+    color: #ffca2b;
+}
+.banner-content h6 {
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    color: #f7f6ea;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+.banner-content h2 {
+    font-weight: 700;
+    font-size: 95PX;
+    color: #f7f6ea;
+    font-family: 'Poppins', sans-serif;
+    line-height: 105px;
+    padding-bottom: 20px;
+}
+.banner-content p {
+    font-family: 'Open Sans', sans-serif;
+    color: #f7f6ea;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 40px;
+}
+.content #btn11 {
+    border: 1px solid #f7f6ea;
+    color: #f7f6ea;
+    padding: 20px 35px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all linear .13s;
+    -webkit-transition: all linear .13s;
+    -moz-transition: all linear .13s;
+    -ms-transition: all linear .13s;
+    -o-transition: all linear .13s;
+}
+
+.content #btn11:hover {
+    color: #222222;
+    background-color: #FFC107;
+    border-color: #c79b18;
+    transition: all linear .3s;
+}
+.banner-end a i {
+    font-size: 34px;
+    margin: 10px;
+    color: #f7f6ea;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.banner-end a :hover{
+    color: #FFC107;
+}
+.banner-end{
+    margin-top: 75px;
+}
+/*============= banner CSS end here ===========*/
+/*============= about CSS gose here ===========*/
+#about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.title-area h2 {
+    color: #383733;
+    font-size: 32px;
+    position: relative;
+    z-index: 9999;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+}
+.title-area h2:before,.title-area h2:after {
+    content: url("../images/download.png");
+    margin: 14px;
+    color: #FFC107;
+    vertical-align: text-top;
+    width: 100%;
+}
+.title-area span {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    z-index: 999;
+}
+.about-slider {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.about-text {
+    padding-top: 60px;
+}
+.about-text h2 {
+    font-family: 'Pacifico', cursive;
+    color: #ebcb6b;
+}
+.about-text p{
+    text-align: left;
+    padding-top: 40px;
+    /* font-style: italic; */
+}
+.about-text span {
+    color: #ffbf00;
+}
+#gg {
+    padding-top: 40px;
+}
+#m-about{
+    background-image: url(../images/about/about.jpg);
+    padding-top: 30px;
+    padding-bottom: 40px;
+    min-height: 528px;
+    position: relative;
+}
+#m-about::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000093;
+}
+.m-about-text h2{
+    color: #fff;
+}
+.m-about-text span{
+    color: #fff;
+}
+#m-about .title-area {
+    position: relative;
+    z-index: 9999;
+    padding-top: 100px;
+}
+#m-about .title-area h2{
+    font-size: 70px;
+}
+#m-contact{
+    background-image: url(../images/about/contact.jpg);
+    padding-top: 30px;
+    padding-bottom: 40px;
+    min-height: 0;
+    position: relative;
+}
+#m-contact::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000093;
+}
+.m-contact-text h2{
+    color: #fff;
+}
+.m-about-text span{
+    color: #fff;
+}
+#m-contact .title-area {
+    position: relative;
+    z-index: 9999;
+    padding-top: 100px;
+    color: #fff;
+}
+#m-contact .title-area h2{
+    font-size: 70px;
+}
+/*============= about CSS end here ===========*/
+/*============= open CSS gose here ===========*/
+#open {
+    background-image: url(../images/opening_hours.jpg);
+    padding-top: 30px;
+    padding-bottom: 40px;
+    min-height: 528px;
+}
+.parallax {
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#open .title-area {
+    padding-top: 50px;
+}
+#open .title-area h2{
+    color: #fffdfd;
+    font-weight: 700;
+    font-size: 32px;
+}
+#open .title-area p {
+    color: #b89630;
+    font-family: 'Pacifico', cursive;
+}
+.open-text {
+    padding-top: 40px;
+}
+.open-days h2{
+    color: #f8c21f;
+    padding-bottom: 10px;
+    font-size: 32px;
+}
+.open-hours h1{
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 32px;
+}
+.open-end p {
+    color: #fff;
+    padding-top: 100px;
+}
+.book-text {
+    color: #fff;
+    z-index: 99999;
+    padding-top: 60px;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+.book-text a{
+    font-size: 34px;
+    border: 2px solid #dab549;
+    color: #dab549;
+    padding: 20px 35px;
+    font-size: 17px;
+    transition: all linear .3s;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-transform: uppercase;
+    position: relative;
+}
+.book-text a:hover {
+    background-color: #dab549;
+    color: #fff;
+}
+/*============= open CSS end here ===========*/
+/*============= menu CSS gose here ===========*/
+#m-menu {
+    position: absolute;
+    background-image: url(../images/menu/m-manu.jpg);
+    padding-top: 30px;
+    padding-bottom: 150px;
+    min-height: 0;
+    position: relative;
+}
+#m-menu::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000093;
+}
+#m-menu .title-area {
+    position: relative;
+    z-index: 9999;
+}
+#m-menu h2 {
+    padding-top: 100px;
+}
+#m-menu span{
+    color: #ffffff;
+}
+#menu {
+    position: relative;
+    padding-top: 100px;
+    background: rgba(0, 0, 0, 0) url(../images/menu-bg.png) no-repeat scroll center bottom / contain;
+}
+#menu .img{
+    margin: 0 auto;
+    width: 450px;
+}
+/* #menu {
+    padding-bottom: 40px;
+    padding-top: 0px;
+    background-image: url("../images/menu-right.PNG"), url("../images/menu-left.PNG");
+    background-position: top left, top right;
+    background-repeat: no-repeat;
+    min-height: 950px;
+} */
+
+.menu-title h2 {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: #dab549;
+    font-size: 23px;
+    font-family: 'Raleway', sans-serif;
+}
+.m-menu-title h2 {
+    color: #dab549;
+    font-size: 33px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.list ul li {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+.detail {
+    font-family: 'Ubuntu', sans-serif;
+    color: #221b1b;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.detail span {
+    color: #bb8f0a;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    margin-left: 5px;
+    
+}
+.menu-btn {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    
+}
+.menu-btn a {
+    border: 2px solid #dab549;
+    color: #dab549;
+    padding: 20px 35px;
+    margin-left: 17px;
+    font-size: 17px;
+    transition: all linear .3s;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-transform: uppercase;
+    position: relative;
+}
+.menu-btn a:hover {
+    background-color: #dab549;
+    color: #fff;
+}
+
+/*============= menu CSS end here ===========*/
+/*============= review CSS gose here ===========*/
+#review {
+    background-image: url(../images/review.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+#review:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.486);
+    top: 0;
+    left: 0;
+}
+#review .title-area  h2{
+    position: relative;
+    color: #fff;
+}
+#review .title-area  span{
+    position: relative;
+    color: #fff;
+    z-index: 99999999;
+    padding-top: 20px;
+}
+#review .title-area  h2::after {
+    position: absolute;
+    bottom: 27px;
+    left: 34%;
+    content: '';
+    width: 7%;
+    height: 2px;
+    background-color: #dab549;
+}
+.review-main {
+    z-index: 99999;
+    position: relative;
+}
+.review-content {
+    background-color: rgb(182, 161, 161);
+    width: 100%;
+    height: 100%;
+    padding: 17px 50px;
+}
+.review-content span {
+    font-size: 72px;
+    font-family: 'Raleway', sans-serif;
+}
+/*============= review CSS gose here ===========*/
+/*============= team CSS gose here ===========*/
+#team{
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.team-item {
+    border: 1px solid #dddddd;
+    transition: all linear .3s;
+    margin-top: 40px;
+}
+.team-img {
+    position: relative;
+    padding-top: 10px;
+    clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
+    background-color: #f1f1f1;
+    transition: all linear .3s;
+}
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(254, 199, 0, 0.5);
+    transition: all linear .3s;
+    opacity: 0;
+}
+.team-item:hover .team-overlay {
+    height: 100%;
+    opacity: 1;
+}
+.team-overlay i {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #353535;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+.team-info {
+    padding-top: 13px;
+    padding-bottom: 11px;
+    transition: all linear .3s;
+}
+.team-info h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #111;
+    text-transform: capitalize;
+}
+.team-info p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #222;
+    text-transform: capitalize;
+    padding-top: 5px;
+}
+.social {
+    padding-bottom: 22px;
+    margin-top: -30px;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.social i {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #111;
+    border-radius: 50%;
+    line-height: 35px;
+    color: #111;
+    margin:0 11px;
+    transition: all linear .9s;
+}
+.social i:hover {
+    background-color: #fec600;
+    border-color: #fec600;
+}
+.team-item:hover .social {
+    margin-top: 0;
+    opacity: 1;
+}
+/*============= team CSS end here ===========*/
+/*============= gallery CSS end here ===========*/
+#gallery {
+    background-image: url(../images/opening_hours.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+#gallery:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+}
+#gallery .headline h2 {
+    color: #fff;
+}
+#gallery .headline p {
+    color: #fff;
+}
+.gallery-main {
+    position: relative;
+    z-index: 99;
+}
+.gal-img {
+    margin-bottom: 24px;
+    position: relative;
+}
+.gal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: all linear .3s;
+}
+.gal-overlay i {
+    width: 40px;
+    height: 40px;
+    background-color: #fec600;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+.gal-img:hover .gal-overlay {
+    opacity: 1;
+}
+.gal-item{
+    margin: 0 12px;
+}
+#gallery .title-area h2{
+    color: #ffffff;
+    padding-bottom: 60px;
+}
+/*============= gallery CSS end here ===========*/
+/*============= res CSS gose here ===========*/
+.res {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner-img.jpg") center/cover no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+    padding-top: 100px;
+}
+.book h2 {
+    position: absolute;
+    top: 14%;
+    left: 41%;
+}
+.card-container {
+    padding-top: 165px;
+    display: grid;
+    grid-template-columns: 496px 787px;
+}
+.card-img{
+    background: url("card-img.jpg") center/cover no-repeat;
+}
+.banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.card-content{
+    background: #fff;
+    height: 330px;
+}
+.card-content h3{
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+    color: #9a9a9a;
+}
+form input[type = submit]{
+    color: #fff;
+    background: #f2745f;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+@media(max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
+    }
+}
+/*============= res CSS end here ===========*/
+/*============= contact CSS gose here ===========*/
+#contact {
+    padding-top: 100px;
+    background-color: #000000;
+    padding-bottom: 100px;
+}
+
+  
+  .wrapper .title h1{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .contact-form{
+    display: flex;
+  }
+  
+  .input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+  }
+  
+  .input-fields,
+  .msg{
+    width: 48%;
+  }
+  
+  .input-fields .input,
+  .msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid rgb(155, 150, 150);
+    padding: 10px;
+    color: #cfcfcf;
+    width: 100%;
+  }
+  
+  .msg textarea{
+    height: 212px;
+  }
+  
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgb(192, 183, 183);
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #bdbdbd;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #c5ecfd;
+  }
+  
+  .btn {
+      background: #dddddd;
+      text-align: center;
+      padding: 15px 95px;
+      border-radius: 5px;
+      color: #000;
+      cursor: pointer;
+      text-transform: uppercase;
+      position: relative;
+      transition: all linear .3s;
+  }
+  .btn:hover{
+      color: #fff;
+      background-color: #fec600;
+  }
+  
+  @media screen and (max-width: 600px){
+    .contact-form{
+      flex-direction: column;
+    }
+    .msg textarea{
+      height: 80px;
+    }
+    .input-fields,
+    .msg{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 390px){
+    .banner-content h2 {
+        font-size: 44PX;
+        line-height: 57px;
+
+    }
+  }
+/*============= contact CSS end here ===========*/
+/*============= footer CSS gose here ===========*/
+footer {
+    background-color: #191919;
+    padding-top: 100px;
+}
+
+.footer-head h2 {
+    color: #fff;
+    padding-bottom: 40px;
+}
+.footer-mid-text span {
+    color: #585858;
+
+}
+.footer-mid-text p {
+    color: #8b8787;
+
+}
+.footer-title h2 {
+    color: #fff;
+    font-size: 32px;
+    padding-bottom: 40px;
+}
+.footer-menu ul li {
+    padding-bottom: 5px;
+}
+.footer-menu ul li a{
+    color: rgb(136, 136, 136);
+    font-size: 20px;
+    transition: all linear .3s;
+}
+.footer-menu ul li a:hover{
+    color: #dab549;
+}
+.footer-menu ol, ul {
+    padding-left: 0;
+}
+.footer-Contact {
+    color: #dbdada;
+}
+.footer-Contact ul li {
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+.footer-Contact ul li span{
+    font-weight: normal;
+    color: rgb(153, 153, 153);
+    margin-left: 15px;
+}
+.footer-Contact ul li i {
+    font-size: 18px;  
+}
+.footer-time{
+    color: #dbdada;
+}
+.footer-time span{
+    color: #fec600;
+}
+#cp {
+    padding-top: 40px;
+    background-color: rgb(17, 15, 15);
+}
+.copyright p {
+    color: rgb(153, 153, 153);
+}
+.icon i {
+    font-size: 24px;
+    padding-right: 15px;
+    color: rgb(153, 153, 153);
+    transition: all linear .3s;
+}
+.icon i:hover {
+    color: #FFC107;
+}
+
+.contact-main {
+    overflow: hidden;
+    border: 1px solid #d1d1d1;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.contact-main:hover{
+    border: 1px solid #dab549;
+}
+.contact-main:hover .contact-icon {
+    color: #dab549;
+    transition: all linear .3s;
+}
+.contact-main:hover .contact-info h2 {
+    color: #dab549;
+    transition: all linear .3s;
+}
+.contact-main:hover {
+    box-shadow: 5px 10px #dab549;
+}
+.contact-icon {
+    color: #584f4f;
+    font-size: 50px;
+    padding: 30px 0;
+}
+.contact-icon:hover{
+    color: #dab549;
+}
+.contact-info h2 {
+    color: #000;
+    padding-bottom: 27px;
+    font-size: 15px;
+    position: relative;
+}
+.contact-info h2::after {
+    position: absolute;
+    content: '';
+    top: 69%;
+    left: 39%;
+    /* transform: translateY(50%); */
+    width: 70px;
+    height: 3px;
+    background-color: #dab549;
+}
+.contact-info p {
+    color: #000;
+    padding: 0 34px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.contact-info p:hover{
+    color: #dab549;
+}
+#contact-a {
+    padding: 50px;
+}
+.contact-main:hover {
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+}
+/*============= footer CSS end here ===========*/
